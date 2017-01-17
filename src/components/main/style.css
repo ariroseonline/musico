@@ -1,0 +1,36 @@
+.trackList {
+  display: flex;
+}
+
+.trackCtrl {
+  border: 1px solid black;
+  padding: 20px 0;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.trackCtrl:active {
+  opacity: .5;
+}
+
+#trackCtrl0 {
+  background-color: red;
+}
+
+#trackCtrl1 {
+  background-color: purple;
+
+}
+
+#trackCtrl2 {
+  background-color: green;
+
+}
+
+#trackCtrl3 {
+  background-color: blue;
+
+}

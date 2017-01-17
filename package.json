@@ -28,7 +28,10 @@
     "eslint-loader": "^1.5.0",
     "eslint-plugin-react": "^6.3.0",
     "file-loader": "^0.9.0",
+    "firebase": "^3.6.5",
+    "normalize.css": "^5.0.0",
     "postcss-loader": "^0.13.0",
+    "react-svg-loader": "^1.1.1",
     "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
@@ -40,6 +43,7 @@
     "start": "webpack-dev-server --history-api-fallback --host 0.0.0.0 --hot --inline --progress",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production webpack -p",
+    "build-deploy": "cross-env NODE_ENV=production webpack -p && firebase deploy",
     "postbuild": "npm run copy",
     "clean": "rimraf build",
     "copy": "cp -r public/* build"

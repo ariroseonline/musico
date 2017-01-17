@@ -1,0 +1,35 @@
+/*.lion {*/
+  /*position: absolute;*/
+  /*width: 1600px;*/
+  /*animation-play-state: paused, paused;*/
+  /*animation-name: moveX, moveY;*/
+  /*animation-duration: 2.05s, 2.4s;*/
+  /*animation-timing-function: linear, linear;*/
+  /*animation-delay: 0s, 0s;*/
+  /*animation-iteration-count: infinite, infinite;*/
+  /*animation-direction: alternate, alternate;*/
+
+
+/*}*/
+
+.animatingLion {
+
+  /*position: absolute;*/
+  /*width: 1600px;*/
+  /*animation-name: moveX, moveY;*/
+  /*animation-duration: 2.05s, 2.4s;*/
+  /*animation-timing-function: linear, linear;*/
+  /*animation-delay: 0s, 0s;*/
+  /*animation-iteration-count: infinite, infinite;*/
+  /*animation-direction: alternate, alternate;*/
+  /*animation-play-state: running, running;*/
+
+}
+
+@keyframes moveX {
+  from { left: -550px; } to { left: 400px; }
+}
+
+@keyframes moveY {
+  from { top: -120px; } to { top: 200px; }
+}

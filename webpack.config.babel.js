@@ -19,13 +19,13 @@ let config = {
     historyApiFallback: true
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.js$/,
+    //     exclude: /node_modules/,
+    //     loader: 'eslint'
+    //   }
+    // ],
     loaders: [
       {
         test: /\.js$/,
@@ -43,10 +43,13 @@ let config = {
         loaders: ['style', 'css']
       },
       {
-        test: /\.(jpg|png|ttf|eot|woff|woff2|svg)$/,
+        test: /\.(jpg|png|ttf|eot|woff|woff2)$/,
         exclude: /node_modules/,
         loader: 'url?limit=100000'
       }
+
+      // { test: /\.svg$/, loader: 'babel?presets[]=es2015,presets[]=react!svg-react' }
+
     ]
   },
   plugins: [
